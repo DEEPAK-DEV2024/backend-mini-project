@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-800 p-10">
+
+    <h1 class="text-gray-400 text-4xl mb-4">Edit Your Post</h1>
+    <div class="flex items-start justify-between">
+        <form action="/edit/<%=post._id%>" method="post">
+            <textarea name="content"
+                class="bg-transparent border-[1px] border-gray-300 w-96 block resize-none p-2 rounded-md h-20 mb-2 text-white"
+                placeholder="What Is In Your Mind"><%= post.content %></textarea>
+            <input type="submit" value="Edit Post" class="px-5 py-2 bg-yellow-500 rounded-md">
+        </form>
+    </div>
+
+</body>
+
+</html>
